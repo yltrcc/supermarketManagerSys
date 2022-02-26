@@ -147,6 +147,9 @@ public class Main {
                     }
                 }
             }
+            if (Integer.valueOf(good.getCount()) < 10 ) {
+                good.setComment("*商品不足10件");
+            }
             listNew.add(good);
         }
         try {
